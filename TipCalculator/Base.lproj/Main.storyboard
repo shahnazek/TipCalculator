@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,28 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="How to Create a Simple Cartoon Waiter in Adobe Illustrator" translatesAutoresizingMaskIntoConstraints="NO" id="TqZ-oh-nQM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="How to Create a Simple Cartoon Waiter in Adobe Illustrator" translatesAutoresizingMaskIntoConstraints="NO" id="TqZ-oh-nQM">
                                 <rect key="frame" x="0.0" y="597" width="414" height="299"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Eg : 123.45" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-bq-29X">
-                                <rect key="frame" x="0.0" y="90" width="414" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="  Enter your bill total :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCc-9t-exW">
-                                <rect key="frame" x="0.0" y="52" width="414" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.77815169100000003" green="0.77795845269999997" blue="0.78562378879999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" red="0.61399209499999996" green="0.61358249190000003" blue="0.62965601680000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEH-SP-cvb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEH-SP-cvb">
                                 <rect key="frame" x="112" y="514" width="190" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81833833460000005" green="0.73841404909999997" blue="0.76462990050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="CALCULATE">
@@ -48,9 +30,8 @@
                                     <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ium-vP-Hwl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Ph-Isc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Select Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ege-Ph-Isc">
                                 <rect key="frame" x="67" y="202" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.81833833460000005" green="0.73841404909999997" blue="0.76462990050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,11 +59,6 @@
                                     <action selector="tipStepperChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BXR-RO-3Ei"/>
                                 </connections>
                             </stepper>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7az-GK-cik">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.77815169100000003" green="0.77795845269999997" blue="0.78562378879999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ffe-zK-fRf">
                                 <rect key="frame" x="99" y="259" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,12 +73,40 @@
                                 <color key="textColor" red="0.81833833460000005" green="0.73841404909999997" blue="0.76462990050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-IC-8bl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="166"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your Bill :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCm-qf-11X">
+                                        <rect key="frame" x="8" y="52" width="158" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Eg : 123.45" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RLj-dj-Jzk">
+                                        <rect key="frame" x="8" y="96" width="398" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90054649109999996" green="0.89512872700000001" blue="0.90516120200000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.62990289929999999" green="0.55356115100000003" blue="0.55684906239999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ROh-IC-8bl" secondAttribute="bottom" constant="730" id="7Vt-0p-L4s"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8FR-3a-A9C"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="centerX" secondItem="qEH-SP-cvb" secondAttribute="centerX" id="VUJ-os-VNF"/>
+                            <constraint firstItem="ege-Ph-Isc" firstAttribute="top" secondItem="ROh-IC-8bl" secondAttribute="bottom" constant="36" id="duS-oV-oa5"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="leading" secondItem="TqZ-oh-nQM" secondAttribute="leading" id="h3V-vr-rL0"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mef-0g-3Zs"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qIi-1X-mQy"/>
+                            <constraint firstItem="ROh-IC-8bl" firstAttribute="trailing" secondItem="TqZ-oh-nQM" secondAttribute="trailing" id="uP4-Gz-Zuo"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="billTextField" destination="AWe-bq-29X" id="DUh-ov-F71"/>
                         <outlet property="splitLabel" destination="9ul-gj-8qq" id="wch-2c-iYl"/>
                         <outlet property="tipLabel" destination="Ffe-zK-fRf" id="jYX-Nb-w8q"/>
                         <segue destination="mIo-tX-taz" kind="presentation" identifier="FinalTipCount" id="gUh-0a-HAG"/>
@@ -110,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196" y="115"/>
+            <point key="canvasLocation" x="195.6521739130435" y="114.50892857142857"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="YYO-hd-W4S">
@@ -170,8 +174,5 @@
     </scenes>
     <resources>
         <image name="How to Create a Simple Cartoon Waiter in Adobe Illustrator" width="400" height="277"/>
-        <systemColor name="opaqueSeparatorColor">
-            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
     </resources>
 </document>
