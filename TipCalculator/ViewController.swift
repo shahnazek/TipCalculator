@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         
         splitLabel.text = String(format: "%.0f", sender.value)
         numberOfPeople = Int(sender.value)
-        print(numberOfPeople)
         
     }
     
